@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 9.6rem;
+    background-color: black;
+    padding: 1rem;
+}
+
+/* 
+font-family: 'Jolly Lodger', cursive;
+*/
+
+.logo {
+    width: 10%;
+    height: 7rem;
+    margin-top: 1rem;
+
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(23, 23, 23);
+    font-size: 4.8rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.encabezado {
+    color: aqua;
+}
+
+footer {
+    background-color: rgb(23, 23, 23);
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar a {
+    color: white;
+}
+
+.section-footer a {
+    color: white;
+}
+
+
+.section-principal {
+    text-align: center;
+    width: 100%;
+    height: 70rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../assets/fondo-principal.avif");
+    background-size: cover;
+}
+
+li {
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+aside{
+    margin: 1rem;
+}
+.jordan-filtro{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: left;
+    border-bottom: black;
+    border-style: solid;
+    margin-right: 15rem;
+    margin-top: 4rem;
+}
+
+h2 {
+    padding-bottom: 0.5rem;
+    padding-left: 0.25rem;
+}
+
+.section-footer {
+    padding-top: 1rem;
+    color: white;
+    line-height: 3rem;
+}
+
+.p-contacto {
+    font-size: 1.6rem;
+}
+
+.p-contacto a {
+    color: black;
+}
+
+.navbar li {
+    display: inline;
+    line-height: 5rem;
+}
+
+.zapas-nike h3 {
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+.nike {
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.zapas-nike div {
+
+    border-color: black;
+    border-style: solid;
+    box-shadow: 0.3rem 0.3rem 0.5rem grey;
+    width: 30rem;
+    font-size: 1.4rem;
+}
+
+.zapas-nike p {
+    font-size: 1.2rem;
+}
+
+.adidas {
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.section-adidas div {
+    margin: 2rem;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 0.3rem 0.3rem 0.5rem grey;
+    font-size: 1.4rem;
+}
+
+.adidas-negro {
+    height: 30rem;
+}
+
+.section-adidas h3 {
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+.Hot-Sale {
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.section-hot-sale div {
+    margin: 2rem;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 0.3rem 0.3rem 0.5rem grey;
+    width: 30rem;
+    font-size: 1.4rem;
+}
+
+.section-hot-sale img {
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+
+.hot-sale-p {
+    text-decoration: line-through;
+    font-size: 1.1rem;
+}
+
+.section-adidas img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,0.35fr);
+    grid-template-areas: 
+    "header header header header"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer"
+}
+
+header{
+    grid-area: header;
+}
+aside{
+    grid-area: aside;
+}
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.zapas-nike{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "im1 . im2"
+    "p   .  k"
+    "im3 . im4"
+}
+
+.img1{
+grid-area: im1;
+}
+
+.img2{
+grid-area: im2;
+}
+
+.img3{
+    grid-area: im3;
+}
+
+.img4{    
+    grid-area: im4;
+}
+
+.main {
+    padding-bottom: 3rem;
+}
+
+.section-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,0.2fr);
+    gap: 0.5rem;
+}
+
+.info{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: center;
+}
+.red{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: center;
+}
+.cliente{
+    justify-self: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+@media (max-width: 768px){
+    .hero{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,0.35fr);
+        grid-template-areas: 
+        "header header"
+        "aside aside"
+        "main main"
+        "main main"
+        "main main"
+        "footer footer"
+    }
+    .zapas-nike{
+        margin-left: 1rem;
+        gap: 1rem;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(3,1fr);
+grid-template-areas: 
+"im1 im2"
+"im3 im4"
+}
+}
+
+@media (max-width: 425px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.4rem;
+    }
+    .hero{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,0.35fr);
+        grid-template-areas: 
+        "header"
+        "aside"
+        "main"
+        "main"
+        "main"
+        "footer "
+    }
+    .nike{
+        font-size: 2.4rem;
+    }
+    .zapas-nike{
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    grid-template-areas: 
+    "im1"
+    "im2"
+    "im3"
+    "im4"
+    }
+    .section-footer{
+        font-size: 1.2rem;
+    }
+}
+
