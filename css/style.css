@@ -98,6 +98,9 @@ h2 {
     color: white;
     line-height: 3rem;
 }
+.section-footer li{
+    list-style: none;
+}
 
 .p-contacto {
     font-size: 1.6rem;
