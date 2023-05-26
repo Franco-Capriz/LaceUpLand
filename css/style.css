@@ -90,6 +90,7 @@ aside{
     border-bottom: black;
     border-style: solid;
 width: 10rem;
+margin-top: 2rem;
 }
 .aside{
     margin-left: 2rem;
@@ -101,7 +102,7 @@ width: 10rem;
     text-align: left;
     border-bottom: black;
     border-style: solid;
-    margin-right: 100rem;
+    margin-right: 170rem;
     margin-top: 2rem;
 }
 
@@ -117,7 +118,9 @@ h2 {
 }
 .section-footer li{
     list-style: none;
+    padding-top: 1rem;
 }
+
 
 .p-contacto {
     font-size: 1.6rem;
@@ -304,6 +307,12 @@ grid-area: im2;
 }
 
 @media (max-width: 768px){
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 2.8rem;
+    }
+
     .hero{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,0.35fr);
@@ -323,6 +332,15 @@ grid-template-rows: repeat(3,1fr);
 grid-template-areas: 
 "im1 im2"
 "im3 im4"
+}
+
+.section-footer{
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,0.30fr);
+    grid-template-rows: repeat(1,0.2fr);
+    gap: 0.5rem;
+    margin-left: 0.5rem;
 }
 }
 
@@ -356,7 +374,12 @@ grid-template-areas:
     "im4"
     }
     .section-footer{
-        font-size: 1.2rem;
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3,0.30fr);
+        grid-template-rows: repeat(1,0.2fr);
+        gap: 0.5rem;
+        margin-left: 0.5rem;
     }
 }
 
