@@ -1,5 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap");
+aside {
+  margin: 1rem;
+}
+aside .jordan-filtro {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-align: left;
+  border-bottom: black;
+  border-style: solid;
+  width: 10rem;
+  margin-top: 2rem;
+}
+aside .nike {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+aside li {
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+footer {
+  background-color: rgb(23, 23, 23);
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  color: white;
+  line-height: 3rem;
+}
+footer a {
+  color: white;
+}
+footer li {
+  list-style: none;
+  padding-top: 1rem;
+}
+
 header {
-  background-color: blue;
+  margin: 0;
+}
+header h1 {
+  text-align: center;
+  font-family: "Jolly Lodger", cursive;
+  font-size: 9.6rem;
+  background-color: black;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+header .encabezado {
+  color: aqua;
+}
+header .navbar {
+  background-color: rgb(23, 23, 23);
+  font-size: 4.8rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .navbar a {
+  color: white;
+}
+header .navbar li {
+  display: inline;
+  line-height: 5rem;
+}
+header .navbar a {
+  text-decoration: none;
+}
+
+.adidas {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-adidas div {
+  margin: 2rem;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 0.3rem 0.3rem 0.5rem grey;
+  font-size: 1.4rem;
+  width: 30rem;
+}
+
+.adidas-negro {
+  height: 30rem;
+}
+
+.section-adidas h3 {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+
+.filtro-adidas {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-align: left;
+  border-bottom: black;
+  border-style: solid;
+  margin-right: 170rem;
+  margin-top: 2rem;
+}
+
+.section-adidas img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  font-size: 1.6rem;
+  padding-bottom: 3rem;
+}
+main .logo {
+  width: 10%;
+  height: 7rem;
+  margin-top: 1rem;
+}
+main a {
+  color: black;
+}
+
+.Hot-Sale {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-hot-sale div {
+  margin: 2rem;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 0.3rem 0.3rem 0.5rem grey;
+  width: 30rem;
+  font-size: 1.4rem;
+}
+
+.section-hot-sale img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hot-sale-p {
+  text-decoration: line-through;
+  font-size: 1.1rem;
+}
+
+section-principal {
+  text-align: center;
+  width: 100%;
+  height: 70rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/fondo-principal.avif");
+  background-size: cover;
+}
+
+main {
+  padding-bottom: 3rem;
+}
+main .zapas-nike div {
+  border-color: black;
+  border-style: solid;
+  box-shadow: 0.3rem 0.3rem 0.5rem grey;
+  width: 30rem;
+  font-size: 1.4rem;
+}
+main .zapas-nike h2 {
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+main .zapas-nike h3 {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+main .zapas-nike p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.4rem;
+  }
+  .hero {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 0.35fr);
+    grid-template-areas: "header" "aside" "main" "main" "main" "footer ";
+  }
+  .nike {
+    font-size: 2.4rem;
+  }
+  .zapas-nike {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "im1" "im2" "im3" "im4";
+  }
+  .section-footer {
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr);
+    grid-template-rows: repeat(1, 0.2fr);
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.8rem;
+  }
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 0.35fr);
+    grid-template-areas: "header header" "aside aside" "main main" "main main" "main main" "footer footer";
+  }
+  .zapas-nike {
+    margin-left: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "im1 im2" "im3 im4";
+  }
+  .section-footer {
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr);
+    grid-template-rows: repeat(1, 0.2fr);
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+.info {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-self: center;
+}
+
+.red {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: center;
+}
+
+.cliente {
+  justify-self: center;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 /*# sourceMappingURL=style.css.map */

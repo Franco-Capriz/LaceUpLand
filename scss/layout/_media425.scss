@@ -1,0 +1,38 @@
+@media (max-width: 425px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.4rem;
+    }
+    .hero{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,0.35fr);
+        grid-template-areas: 
+        "header"
+        "aside"
+        "main"
+        "main"
+        "main"
+        "footer "
+    }
+    .nike{
+        font-size: 2.4rem;
+    }
+    .zapas-nike{
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    grid-template-areas: 
+    "im1"
+    "im2"
+    "im3"
+    "im4"
+    }
+    .section-footer{
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3,0.30fr);
+        grid-template-rows: repeat(1,0.2fr);
+        gap: 0.5rem;
+        margin-left: 0.5rem;
+    }
+}
