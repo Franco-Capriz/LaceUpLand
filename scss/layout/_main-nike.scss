@@ -2,7 +2,7 @@ main {
 
     .zapas-nike {
         div {
-            border-color: black;
+            border-color: $color-principal;
             border-style: solid;
             box-shadow: 0.3rem 0.3rem 0.5rem grey;
             width: 90%;
@@ -29,3 +29,4 @@ main {
 
     }
 }
+

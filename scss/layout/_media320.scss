@@ -4,7 +4,7 @@
         h1 {
         text-align: center;
         font-size: 8.5rem;
-        background-color: black;
+        background-color: $color-principal;
         padding: 1rem;
         margin-bottom: 0;
     }
@@ -38,7 +38,7 @@ aside{
 main {
     .section-hot-sale {
         div {
-            border-color: black;
+            border-color: $color-principal;
             border-style: solid;
             box-shadow: 0.3rem 0.3rem 0.5rem grey;
             width: 100%;

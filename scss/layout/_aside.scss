@@ -2,13 +2,7 @@ aside {
     margin: 1rem;
 
     .jordan-filtro {
-        text-transform: uppercase;
-        font-size: 1.8rem;
-        text-align: left;
-        border-bottom: black;
-        border-style: solid;
-        width: 10rem;
-        margin-top: 2rem;
+        @extend .filtro-sale
     }
 
     .nike {
@@ -28,17 +22,13 @@ aside {
         text-transform: uppercase;
         font-size: 1.8rem;
         text-align: left;
-        border-bottom: black;
+        border-bottom: $color-principal;
         border-style: solid;
         width: 10rem;
         margin-top: 2rem;
     }
     .hot-sale-aside{
-        text-transform: uppercase;
-        font-size: 3.6rem;
-        text-align: left;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        @extend .adidas
     }
     .adidas {
         text-transform: uppercase;
@@ -48,13 +38,7 @@ aside {
         padding-bottom: 1rem;
     }
     .filtro-adidas{
-        text-transform: uppercase;
-        font-size: 1.8rem;
-        text-align: left;
-        border-bottom: black;
-        border-style: solid;
-        width: 10rem;
-        margin-top: 2rem;
+@extend .filtro-sale
     }
     
 }

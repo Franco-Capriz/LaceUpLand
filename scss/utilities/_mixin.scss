@@ -1,9 +1,13 @@
 
-@mixin flex($direction,$content,$items){
+@mixin flex{
     display: flex;
-    flex-direction: $direction;
-    justify-content: $content;
-    align-items: $items;
+    flex-direction: column;
+
 }
 
 
+@mixin flexb {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
