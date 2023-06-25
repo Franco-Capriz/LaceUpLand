@@ -1,0 +1,48 @@
+@media (max-width: 768px){
+    header {
+        margin: 0;
+        h1 {
+        text-align: center;
+        font-size: 8.5rem;
+        background-color: black;
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 2.8rem;
+    }
+    .hero{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,0.35fr);
+        grid-template-areas: 
+        "header"
+        "aside"
+        "main"
+        "main"
+        "main"
+        "footer"
+    }
+}
+aside{
+    .nike{
+        font-size: 2.8rem;
+    }
+    .hot-sale-aside{
+        font-size: 2.8rem;
+    }
+}
+main {
+    .section-hot-sale {
+        div {
+            border-color: black;
+            border-style: solid;
+            box-shadow: 0.3rem 0.3rem 0.5rem grey;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+    }
+}

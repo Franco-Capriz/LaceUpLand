@@ -1,0 +1,109 @@
+.hero{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,0.5fr);
+    grid-template-areas: 
+    "header header header header"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer"
+}
+
+header{
+    grid-area: header;
+}
+aside{
+    grid-area: aside;
+}
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.zapas-nike{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,0.5fr);
+    grid-template-areas: 
+    "im1 . im2"
+    "p   .  k"
+    "im3 . im4"
+}
+
+.img1{
+grid-area: im1;
+}
+
+.img2{
+grid-area: im2;
+}
+
+.img3{
+    grid-area: im3;
+}
+
+.img4{    
+    grid-area: im4;
+}
+
+.main {
+    padding-bottom: 3rem;
+}
+
+.section-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,0.2fr);
+    gap: 0.5rem;
+}
+
+.info{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: center;
+}
+.red{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: center;
+}
+.cliente{
+    justify-self: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section-hot-sale{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,0.5fr);
+    grid-template-areas: 
+    "img1 . img2"
+    "ps   .  ks"
+    "img3 . img4"
+}
+
+.im1{
+    grid-area: img1;
+    }
+    
+    .im2{
+    grid-area: img2;
+    }
+    
+    .im3{
+        grid-area: img3;
+    }
+    
+    .im4{    
+        grid-area: img4;
+    }

@@ -2,7 +2,9 @@
     .navbar{
         flex-direction: column;
         align-items: center;
-        font-size: 2.4rem;
+    }
+    .navbar li{
+        font-size: 2rem;
     }
     .hero{
         grid-template-columns: repeat(1,1fr);
@@ -16,7 +18,7 @@
         "footer "
     }
     .nike{
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
     .zapas-nike{
         gap: 1rem;
@@ -26,6 +28,19 @@
     "im2"
     "im3"
     "im4"
+    }
+    .section-hot-sale{
+        margin-top: 0;
+        margin-left: 0;
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "img1" 
+        "img2"
+        "img3"
+        "img4"
     }
     .section-footer{
         font-size: 1rem;
